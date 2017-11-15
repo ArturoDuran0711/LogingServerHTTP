@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <img src="{{userService.user.photo}}">
+    </ion-card-header>
+    <ion-card-content>
+      {{userService.user.name}}
+      {{userService.user.email}}
+      <button ion-button float-left navPop>Atras</button>
+      <button ion-button float-right (clci)="siguiente">Adelante</button>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item> 
+        <ion-label floating>Email</ion-label>
+        <ion-input [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item> 
+    <ion-label floating>Password</ion-label>
+    <ion-input  [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <button ion-button block (click)="login()">Ingresar</button>
+  <p *ngIf="error"class="error">Email o password incorrecto</p>
+  <p *ngIf="correcto" class="correcto">Email y password correctos</p>
+
+</ion-content>
